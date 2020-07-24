@@ -2,23 +2,16 @@
 public class Sandbox {
 
     public static void main(String[] args) {
-        int number = 0;
-
-        while (true) {
-            number = number + 1;
-
-            if (number >= 5) {
-                break;
-            }
-
-            if (number < 5) {
-                continue;
-            }
-
-            System.out.print(number + " ");
-        }
-
-        System.out.print(number + " ");
+        int number = 3;
+        modifyNumber(number);
+        System.out.println(addAndReturn(number));
     }
 
+    public static void modifyNumber(int number) {
+        number = number + 2;
+    }
+
+    public static int addAndReturn(int number) {
+        return number + 10;
+    }
 }

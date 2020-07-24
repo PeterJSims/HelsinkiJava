@@ -5,6 +5,12 @@ public class SumOfASequence {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        int sum = 0;
+        System.out.println("Last number? ");
+        int lastNum = scanner.nextInt();
+        for(int i = 1; i <= lastNum; i++){
+            sum += i;
+        }
+        System.out.println("The sum is " + sum);
     }
 }
