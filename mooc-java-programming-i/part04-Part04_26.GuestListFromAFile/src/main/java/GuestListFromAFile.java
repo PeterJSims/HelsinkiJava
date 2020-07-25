@@ -9,11 +9,18 @@ public class GuestListFromAFile {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Name of the file:");
-        String file = scanner.nextLine();
+        String fileName = scanner.nextLine();
 
         ArrayList<String> list = new ArrayList<>();
         // implement reading the file here.
         System.out.println("");
+        try (Scanner file = new Scanner(Paths.get(fileName))){
+            while(file.hasNextLine()){
+                list.add(file.nextLine());
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 
         System.out.println("Enter names, an empty line quits.");
         while (true) {
