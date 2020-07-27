@@ -9,7 +9,6 @@
  * @author petersims
  */
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class TextUI {
 
