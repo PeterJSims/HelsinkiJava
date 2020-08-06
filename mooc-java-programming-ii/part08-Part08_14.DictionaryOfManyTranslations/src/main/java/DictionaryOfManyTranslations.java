@@ -21,9 +21,7 @@ public class DictionaryOfManyTranslations {
     public void add(String word, String translation){
         this.dictionary.putIfAbsent(word, new ArrayList<>());
         
-        ArrayList<String> wordToDefine = this.dictionary.get(word);
-        
-        wordToDefine.add(translation);
+        this.dictionary.get(word).add(translation);
 
     }
     
