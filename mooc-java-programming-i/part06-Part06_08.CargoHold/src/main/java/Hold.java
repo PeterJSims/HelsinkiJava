@@ -29,16 +29,16 @@ public class Hold {
 
     public int totalWieght() {
         int sumWeight = 0;
-        for (Suitcase suitecase : suitcases) {
-            sumWeight += suitecase.totalWeight();
+        for (Suitcase suitcase : suitcases) {
+            sumWeight += suitcase.totalWeight();
         }
         return sumWeight;
     }
 
     public void printItems() {
-        for (Suitcase suitecase : suitcases) {
-            suitecase.printItems();
-        }
+        suitcases.forEach((suitcase) -> {
+            suitcase.printItems();
+        });
     }
 
     @Override
