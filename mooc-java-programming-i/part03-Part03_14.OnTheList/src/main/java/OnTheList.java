@@ -17,11 +17,12 @@ public class OnTheList {
             list.add(input);
         }
         System.out.println("Search for?");
-        String search = scanner.nextLine();
-        if (list.contains(search)) {
-            System.out.println(search + " was found!");
+        String name = scanner.nextLine();
+        int nameIndex = list.indexOf(name);
+        if(nameIndex != -1){
+            System.out.println(name + " was found!");
         } else {
-            System.out.println(search + " was not found!");
+            System.out.println(name + " was not found!");
         }
     }
 }

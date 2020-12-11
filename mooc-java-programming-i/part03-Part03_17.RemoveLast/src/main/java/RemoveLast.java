@@ -6,9 +6,11 @@ public class RemoveLast {
     public static void main(String[] args) {
         // Try your method in here
     }
- public static void removeLast(ArrayList<String> strings){
-     if(!strings.isEmpty()){
-         strings.remove(strings.size() - 1);
-     }
- }
+    
+    public static void removeLast(ArrayList<Integer> strings){
+        if(strings.size() > 0){
+            strings.remove(strings.size() - 1);
+        }
+    }
+
 }

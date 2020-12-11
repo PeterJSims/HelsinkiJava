@@ -7,30 +7,21 @@ public class PersonalDetails {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int max = 0;
         String longest = "";
-        double sum = 0;
-        int count = 0;
+        int birthSum = 0;
+        int nameCount = 0;
 
-        while (true) {
-            String input = scanner.nextLine();
-            if (input.equals("")) {
-                break;
+        while (scanner.hasNext()) {
+            String[] info = scanner.nextLine().split(",");
+            if(info[0].length() > longest.length() ){
+                longest = info[0];
             }
-
-            String[] parts = input.split(",");
-            int year = Integer.valueOf(parts[1]);
-            sum += year;
-            count++;
-            String name = parts[0];
-            if (name.length() > max) {
-                max = name.length();
-                longest = name;
-            }
+            birthSum += Integer.valueOf(info[1]);
+            nameCount++;
+            
         }
-
         System.out.println("Longest name: " + longest);
-        System.out.println("Average of bith years: " + (sum / count));
+        System.out.println("Average of the birth years: " + (1.0 * birthSum / nameCount));
 
     }
 }

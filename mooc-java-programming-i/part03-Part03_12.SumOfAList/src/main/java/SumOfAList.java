@@ -20,9 +20,11 @@ public class SumOfAList {
         System.out.println("");
 
         int sum = 0;
-        for(int n : list){
-            sum += n;
+        for(int i : list){
+            sum += i;
         }
+        
         System.out.println("Sum: " + sum);
+        
     }
 }

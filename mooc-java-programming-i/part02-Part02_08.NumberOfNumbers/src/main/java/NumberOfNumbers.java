@@ -9,10 +9,13 @@ public class NumberOfNumbers {
         while(true){
             System.out.println("Give a number:");
             int num = Integer.valueOf(scanner.nextLine());
-            if(num == 0){
+            
+            if (num == 0){
                 break;
+            } else {
+                count++;
             }
-            count++;
+            
         }
         System.out.println("Number of numbers: " + count);
     }

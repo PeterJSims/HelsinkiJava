@@ -6,13 +6,13 @@ public class PrintInRange {
     public static void main(String[] args) {
         // Try your method here
     }
-
-    public static void printNumbersInRange(ArrayList<Integer> numbers, int lowerLimit, int upperLimit) {
-        for(int n: numbers){
-            if (n >= lowerLimit && n <= upperLimit){
-                System.out.println(n);
-            } 
-        }
+    
+    public static void printNumbersInRange(ArrayList<Integer> numbers, int lowerLimit, int upperLimit){
+            for(int i: numbers){
+                if (i >= lowerLimit && i <= upperLimit){
+                    System.out.println(i);
+                }
+            }
     }
-
+    
 }

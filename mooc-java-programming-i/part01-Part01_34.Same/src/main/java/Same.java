@@ -8,10 +8,11 @@ public class Same {
 
         // Write your program here. 
         System.out.println("Enter the first string:");
-        String string1 = scan.nextLine();
+        String strOne = scan.nextLine();
         System.out.println("Enter the second string:");
-        String string2 = scan.nextLine();
-        if (string1.equals(string2)) {
+        String strTwo = scan.nextLine();
+        
+        if(strOne.equals(strTwo)){
             System.out.println("Same");
         } else {
             System.out.println("Different");

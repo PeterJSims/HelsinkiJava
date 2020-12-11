@@ -9,8 +9,8 @@ public class SumOfArray {
 
     public static int sumOfNumbersInArray(int[] array) {
         int sum = 0;
-        for (int n: array){
-            sum += n;
+        for(int i : array){
+            sum += i;
         }
         return sum;
     }

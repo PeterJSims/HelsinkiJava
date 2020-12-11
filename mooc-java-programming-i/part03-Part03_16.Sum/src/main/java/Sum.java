@@ -6,10 +6,13 @@ public class Sum {
     public static void main(String[] args) {
         // Try your method here
     }
-
-    public static int sum(ArrayList<Integer> numbers){
+    
+    public static int sum(ArrayList<Integer> nums){
         int sum = 0;
-        sum = numbers.stream().map((n) -> n).reduce(sum, Integer::sum);
+        for (int i : nums){
+            sum += i;
+        }
         return sum;
     }
+
 }

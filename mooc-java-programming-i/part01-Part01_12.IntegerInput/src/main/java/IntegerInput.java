@@ -8,7 +8,8 @@ public class IntegerInput {
 
         // write your program here
         System.out.println("Give a number:");
-        int num = Integer.valueOf(scanner.next());
+        int num = Integer.valueOf(scanner.nextLine());
         System.out.println("You gave the number " + num);
+
     }
 }

@@ -8,11 +8,14 @@ public class FromWhereToWhere {
 
         // Write your program here
         System.out.println("Where to?");
-        int whereTo = Integer.valueOf(scanner.nextLine());
+        int to = scanner.nextInt();
         System.out.println("Where from?");
-        int whereFrom = Integer.valueOf(scanner.nextLine());
-        for(int i = whereFrom; i <= whereTo; i++){
-            System.out.println(i);
+        int from = scanner.nextInt();
+        
+        if (from <= to){
+            for(int i = from; i <= to; i++){
+                System.out.println(i);
+            }
         }
     }
 }

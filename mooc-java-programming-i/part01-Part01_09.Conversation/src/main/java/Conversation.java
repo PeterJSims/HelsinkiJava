@@ -8,9 +8,9 @@ public class Conversation {
 
         // Write your program here
         System.out.println("Greetings! How are you doing?");
-        String respOne = scanner.nextLine();
+        String responeOne = scanner.nextLine();
         System.out.println("Oh, how interesting. Tell me more!");
-        String respTwo = scanner.nextLine();
+        String responseTwo = scanner.nextLine();
         System.out.println("Thanks for sharing!");
 
     }

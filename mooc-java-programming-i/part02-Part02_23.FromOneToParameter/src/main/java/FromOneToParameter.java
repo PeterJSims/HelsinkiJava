@@ -1,14 +1,20 @@
 
+import java.util.Scanner;
+
+
 
 public class FromOneToParameter {
 
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        printUntilNumber(num);
     }
-
-    public static void printUntilNumber(int c){
-        for(int i = 1; i <= c; i++){
+    
+    public static void printUntilNumber(int n){
+        for (int i = 1; i <= n; i++){
             System.out.println(i);
         }
     }
+
 }

@@ -11,19 +11,24 @@ public class AverageOfAList {
         // adding them on a list until user gives -1.
         // Then it computes the average of the numbers on the list
         // and prints it.
-        ArrayList<Integer> nums = new ArrayList<>();
+        
+        ArrayList<Integer> list = new ArrayList<>();
+        
         while(true){
             int num = Integer.valueOf(scanner.nextLine());
-            if(num == -1){
+            
+            if (num == -1){
                 break;
             }
-            nums.add(num);
+            
+            list.add(num);
         }
+        
         int sum = 0;
-        for(int n : nums){
-            sum += n;
+        for(int i : list){
+            sum += i;
         }
-        double avg = (sum * 1.0) / nums.size();
-        System.out.println("Average: " + avg);
+        
+        System.out.println("Average: " + (1.0 * sum / list.size()));
     }
 }

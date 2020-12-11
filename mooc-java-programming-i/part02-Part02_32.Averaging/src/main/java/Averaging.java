@@ -9,7 +9,8 @@ public class Averaging {
 
     public static double average(int number1, int number2, int number3, int number4) {
         //write some code here
-        return (sum(number1, number2, number3, number4) * 1.0) / 4;
+        int sum = sum(number1, number2, number3, number4);
+        return 1.0 * sum / 4;
     }
 
     public static void main(String[] args) {

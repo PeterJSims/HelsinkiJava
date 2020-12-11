@@ -5,21 +5,17 @@ public class NameOfTheOldest {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int max = 0;
-        String name = "";
-        while (true) {
-            String str = scanner.nextLine();
 
-            if (str.isEmpty()) {
-                break;
-            }
-            String[] splitStr = str.split(",");
-            int age = Integer.valueOf(splitStr[1]);
-            if (age > max) {
-                max = age;
-                name = splitStr[0];
+        String oldest = "";
+        int oldestAge = 0;
+
+        while (scanner.hasNext()) {
+            String[] info = scanner.nextLine().split(",");
+            if (Integer.valueOf(info[1]) > oldestAge) {
+                oldestAge = Integer.valueOf(info[1]);
+                oldest = info[0];
             }
         }
-        System.out.println("Name of the oldest: " + name);
+        System.out.println("Name of the oldest: " + oldest);
     }
 }

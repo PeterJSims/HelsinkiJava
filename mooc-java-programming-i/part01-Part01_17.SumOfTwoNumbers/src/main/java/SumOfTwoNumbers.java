@@ -8,10 +8,10 @@ public class SumOfTwoNumbers {
 
         // Write your program here
         System.out.println("Give the first number:");
-        int num1 = Integer.valueOf(scanner.nextLine());
+        int numOne = Integer.valueOf(scanner.nextLine());
         System.out.println("Give the second number:");
-        int num2 = Integer.valueOf(scanner.nextLine());
-        System.out.println("The sum of the numbers is " + (num1 + num2));
+        int numTwo = Integer.valueOf(scanner.nextLine());
+        System.out.println("The sum of the numbers is " + (numOne + numTwo));
 
     }
 }

@@ -9,15 +9,16 @@ public class RememberTheseNumbers {
 
         ArrayList<Integer> numbers = new ArrayList<>();
         while (true) {
-            int num = Integer.valueOf(scanner.nextLine());
-            if (num == -1) {
+            int luku = Integer.valueOf(scanner.nextLine());
+            if (luku == -1) {
                 break;
             }
-            
-            numbers.add(num);
+
+            numbers.add(luku);
         }
-        numbers.forEach((n) -> {
-            System.out.println(n);
-        });
+        for (int i: numbers){
+            System.out.println(i);
+        }
+
     }
 }

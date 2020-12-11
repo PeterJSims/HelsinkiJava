@@ -7,9 +7,9 @@ public class MessageThreeTimes {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Write a message:");
+        // Write your program here
         String message = scanner.nextLine();
-        
-        for(int i = 0; i < 3; i++){
+        for(int i = 0; i <3; i++){
             System.out.println(message);
         }
 

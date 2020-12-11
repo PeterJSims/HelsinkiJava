@@ -6,14 +6,9 @@ public class LastWords {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        while(true){
-            String str = scanner.nextLine();
-            
-            if(str.isEmpty()){
-                break;
-            }
-            String[] splitStr = str.split(" ");
-            System.out.println(splitStr[splitStr.length - 1]);
-        };
+        while (scanner.hasNext()) {
+            String[] lines = scanner.nextLine().split(" ");
+            System.out.println(lines[lines.length - 1]);
+        }
     }
 }

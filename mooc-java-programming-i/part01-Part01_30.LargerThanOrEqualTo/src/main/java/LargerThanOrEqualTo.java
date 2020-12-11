@@ -7,16 +7,20 @@ public class LargerThanOrEqualTo {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Give the first number:");
-        int num1 = Integer.valueOf(scan.nextLine());
+        int numOne = Integer.valueOf(scan.nextLine());
         System.out.println("Give the second number:");
-        int num2 = Integer.valueOf(scan.nextLine());
+        int numTwo = Integer.valueOf(scan.nextLine());
 
-        if (num1 > num2) {
-            System.out.println("Larger number is: " + num1);
-        } else if (num1 < num2) {
-            System.out.println("Larger number is " + num2);
-        } else {
+        if (numOne == numTwo) {
             System.out.println("The numbers are equal!");
+        } else {
+            System.out.print("Greater number");
+            if (numOne > numTwo) {
+                System.out.print(numOne);
+            } else {
+                System.out.print(numTwo);
+            }
         }
+
     }
 }

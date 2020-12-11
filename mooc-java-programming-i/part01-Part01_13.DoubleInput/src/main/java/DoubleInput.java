@@ -8,7 +8,7 @@ public class DoubleInput {
 
         // write your program here
         System.out.println("Give a number:");
-        double num = Double.valueOf(scanner.next());
+        double num = Double.valueOf(scanner.nextLine());
         System.out.println("You gave the number " + num);
 
     }

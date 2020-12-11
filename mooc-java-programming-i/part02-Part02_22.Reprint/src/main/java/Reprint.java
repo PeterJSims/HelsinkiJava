@@ -9,8 +9,8 @@ public class Reprint {
         
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many times?");
-        int count = Integer.valueOf(scanner.nextLine());
-        for(int i = 0; i < count; i++){
+        int times = scanner.nextInt();
+        for(int i = 0; i < times; i++){
             printText();
         }
     }
@@ -18,6 +18,7 @@ public class Reprint {
     // Don't change the next line that defines the method!
     // (We aren't giving a method a parameter yet)
     public static void printText() {
+        // write some code here
         System.out.println("In a hole in the ground there lived a method");
     }
 }
