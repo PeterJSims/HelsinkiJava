@@ -10,5 +10,12 @@ public class Items {
         ArrayList<Item> items = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
+        while(scanner.hasNextLine()){
+            items.add(new Item(scanner.nextLine()));
+        }
+        
+        for (Item i: items){
+            System.out.println(i);
+        }
     }
 }
