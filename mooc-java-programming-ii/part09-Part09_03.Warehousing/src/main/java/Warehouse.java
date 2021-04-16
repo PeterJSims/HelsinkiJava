@@ -1,5 +1,4 @@
 
-
 public class Warehouse {
 
     private double capacity;
@@ -17,6 +16,10 @@ public class Warehouse {
 
     public double getBalance() {
         return this.balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
     public double getCapacity() {
