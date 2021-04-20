@@ -6,9 +6,15 @@ public class Person {
     private int age;
 
     public Person(String name, int age) {
+        if (name == null || name.length() > 40 || name.isEmpty()) {
+            throw new IllegalArgumentException();
+        } else if (age < 0 || age > 120) {
+            throw new IllegalArgumentException();
+        } else {
+            this.name = name;
+            this.age = age;
+        }
 
-        this.name = name;
-        this.age = age;
     }
 
     public String getName() {
